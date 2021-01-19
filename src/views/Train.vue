@@ -1,36 +1,36 @@
 <template>
     <div class="about">
-        <p>{{ date }} / {{ trainNumber }}</p>
-        <button v-on:click="showPassing = !showPassing">näytä ohiajot</button>
+        <p>{{ date }} / {{ trainNumber }} <button v-on:click="showPassing = !showPassing" class="p-1 px-2 rounded-full leading-none bg-blue-500 text-white cursor-pointer focus:outline-none">näytä ohitukset</button></p>
+
         <p v-if="loading">ladataan</p>
         <p v-if="error" class="font-bold text-red-500">{{ error }}</p>
         <div v-if="train" class="mt-2">
             <!-- Train type and commuter line, if exists -->
-            <p class="text-3xl font-bold mb-2">
+            <p class="text-3xl font-bold leading-none">
                 {{ train.trainType }} {{ train.trainNumber }}
                 <span v-if="train.commuterLineID">({{ train.commuterLineID }})</span>
                 <span v-if="train.runningCurrently" class="text-gray-400">kulussa</span>
             </p>
 
-            <!-- Start and end station -->
-            <p class="text-2xl">
-                {{
-                    stations.find(
-                        (o) => o.stationShortCode === train.timeTableRows[0].stationShortCode
-                    ).stationName
-                }}
-                -
-                {{
-                    stations.find(
-                        (o) =>
-                            o.stationShortCode ===
-                            train.timeTableRows[train.timeTableRows.length - 1].stationShortCode
-                    ).stationName
-                }}
-            </p>
-
-            <!-- Operator name -->
-            <p class="mb-2">
+            <p class="mb-4">
+                <!-- Start and end station -->
+                <span class="text-2xl mr-2">
+                    {{
+                        stations.find(
+                            (o) => o.stationShortCode === train.timeTableRows[0].stationShortCode
+                        ).stationName
+                    }}
+                    -
+                    {{
+                        stations.find(
+                            (o) =>
+                                o.stationShortCode ===
+                                train.timeTableRows[train.timeTableRows.length - 1].stationShortCode
+                        ).stationName
+                    }}
+                </span>
+                <br class="sm:hidden">
+                <!-- Operator name -->
                 {{
                     operators.find((o) => o.operatorShortCode === train.operatorShortCode)
                         .operatorName
@@ -215,13 +215,13 @@
                         >
                     </p>
                     <div v-if="cause.thirdCategory">
-                        vastuu: {{ cause.thirdCategory.responsibility }}
+                        Vastuu: {{ cause.thirdCategory.responsibility }}
                     </div>
                     <div v-else-if="cause.detailedCategory.responsibility">
-                        vastuu: {{ cause.detailedCategory.responsibility }}
+                        Vastuu: {{ cause.detailedCategory.responsibility }}
                     </div>
                     <div v-else>
-                        vastuu: ei tiedossa
+                        Vastuu: ei tiedossa
                     </div>
                 </div>
             </div>
