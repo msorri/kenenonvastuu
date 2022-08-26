@@ -380,13 +380,13 @@ export default {
                                 ? c.detailedCategoryCodeId
                                 : c.categoryCodeId,
                         thirdCategory: this.thirdCauses?.find(
-                            (o) => o.id === c.thirdCategoryCodeId?.toString()
+                            (o) => o.thirdCategoryCode === c.thirdCategoryCode?.toString()
                         ),
                         detailedCategory: this.detailedCauses?.find(
-                            (o) => o.id === c.detailedCategoryCodeId?.toString()
+                            (o) => o.detailedCategoryCode === c.detailedCategoryCode?.toString()
                         ),
                         category: this.causeCategories.find(
-                            (o) => o.id === c.categoryCodeId.toString()
+                            (o) => o.categoryCode === c.categoryCode.toString()
                         ),
                     };
 
