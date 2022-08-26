@@ -43,7 +43,7 @@ export default {
         };
     },
     mounted() {
-        console.table(this.causeCategories);
+        // console.table(this.causeCategories);
     },
 };
 </script>
