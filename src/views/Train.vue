@@ -272,7 +272,7 @@ export default {
                 if (res.length !== 1) throw new Error('Train not found');
 
                 [this.train] = res;
-                console.log(this.train);
+                // console.log(this.train);
 
                 this.consolidateTimetable();
             } catch (e) {
