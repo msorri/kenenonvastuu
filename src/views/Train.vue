@@ -8,8 +8,8 @@
             <!-- Train type and commuter line, if exists -->
             <p class="text-3xl font-bold leading-none">
                 {{ train.trainType }} {{ train.trainNumber }}
-                <span v-if="train.commuterLineID">({{ train.commuterLineID }})</span>
-                <span v-if="train.runningCurrently" class="text-gray-400">kulussa</span>
+                <span v-if="train.commuterLineID" class="font-normal">{{ train.commuterLineID }}</span>
+                <span v-if="train.runningCurrently" class="font-normal text-gray-400"> kulussa</span>
             </p>
 
             <p class="mb-4">
