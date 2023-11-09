@@ -1,31 +1,50 @@
 <template>
-    <div class="text-left font-mono">
-        <h2>Syyluokat</h2>
-        <div v-for="cause in causeCategories" :key="cause.id">
-            {{ cause.categoryCode }} - {{ cause.categoryName}}
+    <div class="text-left">
+        <h2 class="mb-4 text-xl font-bold">Syykoodiryhmät</h2>
+        <div v-for="cause in categories" :key="cause.id" class="mb-6">
+            <p class="pb-1">
+                <strong class="pr-3 text-xl font-mono">{{ cause.code }}</strong><strong>{{ cause.name }}</strong>
+            </p>
+            <p>
+                Vastuu: <strong>{{ cause.responsibility }}</strong><strong v-if="cause.secondary">, sekundäärinen</strong>
+            </p>
+            <p>
+                <em>{{ cause.description }}</em>
+            </p>
         </div>
-        <br>
-        <h2>Syykoodit</h2>
-        <div v-for="cause in detailedCauses" :key="cause.id">
-            {{ cause.detailedCategoryCode }} - {{ cause.detailedCategoryName}}
-            <strong v-if="cause.responsibility">{{ cause.responsibility }}</strong>
-            <strong v-else>unknown</strong>
-            <strong v-if="cause.secondary">, sekundäärinen</strong>
+        <hr class="my-4" />
+        <h2 class="text-xl mb-4">1-tason syykoodit</h2>
+        <div v-for="cause in detailedCategories" :key="cause.id" class="mb-6">
+            <p class="pb-1">
+                <strong class="pr-3 text-xl font-mono">{{ cause.code }}</strong><strong>{{ cause.name }}</strong>
+            </p>
+            <p>
+                Vastuu: <strong>{{ cause.responsibility }}</strong><strong v-if="cause.secondary">, sekundäärinen</strong>
+            </p>
+            <p>
+                <em>{{ cause.description }}</em>
+            </p>
         </div>
-        <br>
-        <h2>Kolmannen tason syykoodit</h2>
-        <div v-for="cause in thirdCauses" :key="cause.id">
-            {{ cause.thirdCategoryCode }} - {{ cause.thirdCategoryName}}
-            <strong>{{ cause.responsibility }}</strong>
-            <strong v-if="cause.secondary">, sekundäärinen</strong>
+        <hr class="my-4" />
+        <h2 class="text-xl mb-4">2-tason syykoodit</h2>
+        <div v-for="cause in thirdCategories" :key="cause.id" class="mb-6">
+            <p class="pb-1">
+                <strong class="pr-3 text-xl font-mono">{{ cause.code }}</strong><strong>{{ cause.name }}</strong>
+            </p>
+            <p>
+                Vastuu: <strong>{{ cause.responsibility }}</strong><strong v-if="cause.secondary">, sekundäärinen</strong>
+            </p>
+            <p>
+                <em>{{ cause.description }}</em>
+            </p>
         </div>
     </div>
 </template>
 
 <script>
-import causeCategories from '@/assets/data/category-exp.json';
-import detailedCauses from '@/assets/data/detailedCategory-exp.json';
-import thirdCauses from '@/assets/data/thirdCategory-exp.json';
+import categories from '@/assets/data/category-exp.json';
+import detailedCategories from '@/assets/data/detailedCategory-exp.json';
+import thirdCategories from '@/assets/data/thirdCategory-exp.json';
 
 export default {
     name: 'Causes',
@@ -35,15 +54,13 @@ export default {
         return {
             loading: false,
             error: null,
-            causeCategories,
-            detailedCauses,
-            thirdCauses,
-            date: this.$route.params.date,
-            trainNumber: this.$route.params.trainNumber,
+            categories,
+            detailedCategories,
+            thirdCategories,
         };
     },
     mounted() {
-        console.table(this.causeCategories);
+        console.table(this.categories);
     },
 };
 </script>

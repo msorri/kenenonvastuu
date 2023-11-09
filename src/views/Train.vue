@@ -8,8 +8,8 @@
             <!-- Train type and commuter line, if exists -->
             <p class="text-3xl font-bold leading-none">
                 {{ train.trainType }} {{ train.trainNumber }}
-                <span v-if="train.commuterLineID">({{ train.commuterLineID }})</span>
-                <span v-if="train.runningCurrently" class="text-gray-400">kulussa</span>
+                <span v-if="train.commuterLineID"> / {{ train.commuterLineID }}</span>
+                <span v-if="train.runningCurrently" class="text-gray-400"> kulussa</span>
             </p>
 
             <p class="mb-4">
@@ -201,27 +201,42 @@
                     <p class="font-bold text-2xl mt-2">
                         {{ cause.displayCategoryCode }}
                     </p>
-                    <p>{{ cause.category.categoryName }}</p>
+                    <p>{{ cause.category.name }}</p>
                     <p>
-                        {{ cause.detailedCategory?.detailedCategoryName }}
+                        {{ cause.detailedCategory?.name }}
                         <span v-if="cause.detailedCategory?.secondary" class="text-gray-400"
                             >sekundäärinen</span
                         >
                     </p>
                     <p>
-                        {{ cause.thirdCategory?.thirdCategoryName }}
+                        {{ cause.thirdCategory?.name }}
                         <span v-if="cause.thirdCategory?.secondary" class="text-gray-400"
                             >sekundäärinen</span
                         >
                     </p>
                     <div v-if="cause.thirdCategory">
-                        Vastuu: {{ cause.thirdCategory.responsibility }}
+                        <p>
+                            <strong>Vastuu: {{ cause.thirdCategory.responsibility }}</strong>
+                        </p>
+                        <p class="text-sm">
+                            <em>{{ cause.thirdCategory.description }}</em>
+                        </p>
                     </div>
-                    <div v-else-if="cause.detailedCategory.responsibility">
-                        Vastuu: {{ cause.detailedCategory.responsibility }}
+                    <div v-else-if="cause.detailedCategory">
+                        <p>
+                            <strong>Vastuu: {{ cause.detailedCategory.responsibility }}</strong>
+                        </p>
+                        <p class="text-sm">
+                            <em>{{ cause.detailedCategory.description }}</em>
+                        </p>
                     </div>
                     <div v-else>
-                        Vastuu: ei tiedossa
+                        <p>
+                            <strong>Vastuu: {{ cause.category.responsibility }}</strong>
+                        </p>
+                        <p class="text-sm">
+                            <em>{{ cause.category.description }}</em>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -230,9 +245,9 @@
 </template>
 
 <script>
-import causeCategories from '@/assets/data/category-exp.json';
-import detailedCauses from '@/assets/data/detailedCategory-exp.json';
-import thirdCauses from '@/assets/data/thirdCategory-exp.json';
+import categories from '@/assets/data/category-exp.json';
+import detailedCategories from '@/assets/data/detailedCategory-exp.json';
+import thirdCategories from '@/assets/data/thirdCategory-exp.json';
 
 /* eslint no-plusplus: ["error", { "allowForLoopAfterthoughts": true }] */
 /* eslint-disable no-continue */
@@ -247,9 +262,9 @@ export default {
             date: this.$route.params.date,
             trainNumber: this.$route.params.trainNumber,
             showPassing: false,
-            causeCategories,
-            detailedCauses,
-            thirdCauses,
+            categories,
+            detailedCategories,
+            thirdCategories,
             stations: null,
             operators: null,
             train: null,
@@ -272,7 +287,6 @@ export default {
                 if (res.length !== 1) throw new Error('Train not found');
 
                 [this.train] = res;
-                console.log(this.train);
 
                 this.consolidateTimetable();
             } catch (e) {
@@ -373,24 +387,19 @@ export default {
                             : c.detailedCategoryCode
                                 ? c.detailedCategoryCode
                                 : c.categoryCode,
-                        // eslint-disable-next-line no-nested-ternary
-                        displayCategoryCodeId: c.thirdCategoryCodeId
-                            ? c.thirdCategoryCodeId
-                            : c.detailedCategoryCodeId
-                                ? c.detailedCategoryCodeId
-                                : c.categoryCodeId,
-                        thirdCategory: this.thirdCauses?.find(
-                            (o) => o.id === c.thirdCategoryCodeId?.toString()
+                        thirdCategory: this.thirdCategories?.find(
+                            (o) => o.code === c.thirdCategoryCode
                         ),
-                        detailedCategory: this.detailedCauses?.find(
-                            (o) => o.id === c.detailedCategoryCodeId?.toString()
+                        detailedCategory: this.detailedCategories?.find(
+                            (o) => o.code === c.detailedCategoryCode
                         ),
-                        category: this.causeCategories.find(
-                            (o) => o.id === c.categoryCodeId.toString()
+                        category: this.categories.find(
+                            (o) => o.code === c.categoryCode
                         ),
                     };
 
-                    if (causes.find((o) => o.displayCategoryCodeId === cause.displayCategoryCodeId))
+                    // skip if the cause is already in the array to avoid duplicates
+                    if (causes.find((o) => o.code === cause.displayCategoryCode))
                         return;
 
                     causes.push(cause);
