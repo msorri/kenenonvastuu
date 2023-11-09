@@ -1,1 +1,352 @@
-﻿[{"code":"H1","name":"Liikennöitsijän henkilökunta puuttuu","responsibility":"liikennöitsijä","secondary":false,"description":"Myöhästymiset, jotka johtuvat liikennöitsijän henkilökunnan puuttumisesta. Myös junan lähtövalmisteluihin liittyvän liikennöitsijän henkilökunnan (esim. vaihtotyönjohtaja tai jarrujenkoettelija) puuttumisesta aiheutuvat myöhästymiset."},{"code":"H2","name":"Lähtövalmius- tai lähtöpoikkeama-ilmoitus tekemättä","responsibility":"liikennöitsijä","secondary":false,"description":"Myöhästymiset, jotka johtuvat siitä, että junahenkilökunta ei tee lähtövalmius- tai lähtöpoikkeamailmoitusta ajallaan. Lähtövalmius- tai lähtöpoikkeamailmoituksen puuttuessa liikenneohjaaja on yhteydessä junahenkilökuntaan. Jos kyse on inhimillisestä erehdyksestä, käytetään tätä syykoodia."},{"code":"H3","name":"Muu henkilökuntasyy","responsibility":"liikennöitsijä / ulkopuolinen","secondary":false,"description":"Muista henkilökuntaan liittyvistä syistä johtuvat myöhästymiset. Liikenneohjaaja tarkentaa tämän syyn 2-tasolle LOKIssa seuraavassa kuvatulla tavalla. Liikenneohjaajan on annettava selite tapauksesta käyttäessään tätä syykoodia."},{"code":"J1","name":"Junan muodostamisen viivästyminen (kaikki liikenne)","responsibility":"liikennöitsijä","secondary":false,"description":"Myöhästymiset, jotka johtuvat siitä, ettei lähdössä olevaa junaa saada muodostettua ajoissa. Myös myöhästymiset, jotka aiheutuvat vaunujen oton/jätön taikka veturin kytkennän tai irrotuksen viivästymisestä tai kuormauksesta/purusta väliasemalla."},{"code":"K1","name":"Kalustopula","responsibility":"liikennöitsijä","secondary":false,"description":"Myöhästymiset, jotka johtuvat kalustopulasta. "},{"code":"K2","name":"Kalustovika","responsibility":"liikennöitsijä","secondary":false,"description":"Myöhästymiset, jotka johtuvat kaluston tai moottorijunien vikaantumisesta lähtöraiteella tai matkan aikana. Jos veturivetoisen junan osalta ei tiedetä, onko vika kalustossa vai veturissa, käytetään syykoodia K2."},{"code":"K3","name":"Kalustosta johtuva nopeuden alennus","responsibility":"liikennöitsijä","secondary":false,"description":"Myöhästymiset, jotka johtuvat siitä, että junalla on muusta syystä kuin veturista johtuva nopeuden alennus."},{"code":"K4","name":"Kytkentä","responsibility":"liikennöitsijä","secondary":false,"description":"Matkustajajunien myöhästymiset, jotka johtuvat junan lähtöasemalla tai matkan aikana ilmenneistä ongelmista suunnitellussa uusien vaunujen kytkemisessä junaan tai kahden junarungon yhdistämisessä."},{"code":"K5","name":"Irroitus","responsibility":"liikennöitsijä","secondary":false,"description":"Matkustajajunien myöhästymiset, jotka johtuvat junan lähtöasemalla tai matkan aikana ilmenneistä ongelmista suunnitellussa vaunujen irrottamisessa junasta tai kahden junarungon irrottamisessa toisistaan."},{"code":"K6","name":"Katsastamaton kalusto","responsibility":"liikennöitsijä","secondary":false,"description":"Myöhästymiset, jotka aiheutuvat katsastamattoman kaluston vaihtamisesta / poistamisesta junasta."},{"code":"V1","name":"Veturipula","responsibility":"liikennöitsijä","secondary":false,"description":"Myöhästymiset, jotka johtuvat veturipulasta."},{"code":"V2","name":"Veturivika","responsibility":"liikennöitsijä","secondary":false,"description":"Lähtöraiteella tai matkan aikana tapahtuneesta veturin vikaantumisesta aiheutuneet myöhästymiset. Jos veturivetoisen junan osalta ei tiedetä, onko vika kalustossa vai veturissa, käytetään syykoodia K2 (kalustovika). Junan kuljettaja ilmoittaa liikenneohjaajalle matkan aikana tapahtuvista kalusto- tai vetokalustovioista. Ilmoituksen yhteydessä kuljettajan tulee kertoa, onko vika veturissa vai muussa kalustossa, mikäli se on tiedossa."},{"code":"V3","name":"Vetovoimasta johtuva nopeuden alennus / tehon puute","responsibility":"liikennöitsijä","secondary":false,"description":"Myöhästymiset, jotka aiheutuvat siitä, että junalla on veturista johtuva nopeuden alennus. Myös myöhästymiset, jotka johtuvat suunniteltua pienemmästä vetokaluston tehosta. Tehon puutteen syynä voi olla tekninen vika tai vetokaluston vaihto."},{"code":"V4","name":"Katsastamaton vetokalusto","responsibility":"liikennöitsijä","secondary":false,"description":"Myöhästymiset, jotka johtuvat katsastamattoman veturin vaihtamisesta / poistamisesta junasta."},{"code":"A1","name":"Mäkeenjäänti tai nopeuden poikkeuksellinen aleneminen mäessä","responsibility":"liikennöitsijä","secondary":false,"description":"Mäkeenjäänneistä aiheutuneet myöhästymiset. Syykoodia voidaan käyttää myös tilanteessa, jossa junan kulku hidastuu merkittävästi johtuen jyrkästä mäestä ja sen olosuhteista."},{"code":"A2","name":"Aikataulu-suunnittelun virhe","responsibility":"liikennöitsijä","secondary":false,"description":"Tätä koodia voi käyttää perustellusta syystä tilanteissa, joissa junan myöhästyminen joko kumuloituu useamman asemavälin matkalla tai toistuu useampana päivänä samalla seuranta-asemalla tai -välillä."},{"code":"A3","name":"Junaa ei ole ajettu","responsibility":"liikennöitsijä","secondary":false,"description":"Kirjautuu junille, jotka kuitataan LOKIssa ”Ei ajettu” -toiminnallisuudella. Sitä voidaan käyttää tilanteissa, joissa juna tiedetään perutuksi, mutta liikennöitsijä ei ole ajoissa tehnyt junan perumista kapasiteetinhallintajärjestelmään. Tällä toiminnallisuudella liikenneohjaaja saa kuitattua LOKIn vaatimat tapahtumat pois listalta, mutta kirjaus ei tee junasta peruttua. Liikenteenohjaus välittää liikennöitsijälle tiedon perumatta jääneestä junasta. Lisäksi tätä toiminnallisuutta käytetään tavarajunille osiin jaetuilla liikennepaikoilla, jos ne lähtevät tai saapuvat aikataulusta poikkeavalle liikennepaikalle."},{"code":"E1","name":"Etuajassa lähtö","responsibility":"liikennöitsijä / liikenteenohjaus","secondary":false,"description":"Kirjataan etuajassakulku, kun liikenneohjaaja antaa junalle luvan lähteä etuajassa alkuasemaltaan. Liikenneohjaaja varmistaa syyn etuajassa lähdölle veturinkuljettajalta (tai opk:sta), kun lupaa etuajassa lähdölle pyydetään."},{"code":"E2","name":"Ajo- tai pysähtymisajan alitus","responsibility":"liikennöitsijä","secondary":false,"description":"Kirjataan etuajassakulku, kun se tapahtuu junan matkan aikana. "},{"code":"L1","name":"Yhteysliikenteen odotus (jatkoyhteydet)","responsibility":"liikennöitsijä","secondary":true,"description":"Kirjataan yhteysliikenteen (henkilöliikenne) odotuksesta aiheutuneet myöhästymiset."},{"code":"L2","name":"Junakohtaus, edellä kulkeva juna tai ohitus","responsibility":"liikenteenohjaus","secondary":true,"description":"Kirjataan junakohtauksesta, edellä kulkevasta junasta tai ohituksesta aiheutuneet myöhästymiset. Tavallisesti kyse on siitä, että liikenteen myöhästymisen takia junakohtaus ei toteudu suunnitellusti tai nopeampi juna saavuttaa hitaamman junan. Kyse voi olla myös siitä, että normaalissa liikennetilanteessa suunniteltu junakohtaus tai ohitus kestää suunniteltua pidempään."},{"code":"L3","name":"Konflikti kapasiteetissa","responsibility":"liikenteenohjaus / liikennöitsijä","secondary":true,"description":"Myöhästymiset, jotka johtuvat konfliktista kapasiteetissa. Esimerkiksi liikenteen ruuhkautumisen takia asemalla ei ole vapaata/sopivaa tuloraidetta tai ratapiha on täynnä."},{"code":"L4","name":"Myöhästyminen ulkomailta","responsibility":"ulkopuolinen","secondary":false,"description":"Ulkomailta myöhässä saapuvasta junasta aiheutuvat myöhästymiset. Tällä syykoodilla ei ole 2-tason syykoodeja."},{"code":"L5","name":"Edessä oleva kalusto tukkii radan","responsibility":"liikennöitsijä / ulkopuolinen","secondary":true,"description":"Vain järjestelmien käytössä. Järjestelmät kirjaavat tämän syykoodin (1- sekä 2-tason) automaattisesti niille junille, jotka linkitetään toisen junan tai muun kaluston rikkoontumisesta, mäkeenjäännistä tai onnettomuudesta tehdylle POHA-tapahtumalle."},{"code":"L6","name":"Junan lähtöön liittyvä odotus","responsibility":"liikennöitsijä / radanpitäjä / liikenteenohjaus / ulkopuolinen","secondary":true,"description":"Myöhästymiset, jotka johtuvat junan lähtöön liittyvästä odottamisesta, esimerkiksi lähtevän junan saaton myöhästymisestä tai koko junarungon odottamisesta seuraavaa junaa varten. Tämä koskee myös junarunkojen kääntöjä ja kaukoliikenteenjunien yhdistämistä väliasemalla."},{"code":"L7","name":"Liikenteenhoitovirhe","responsibility":"liikenteenohjaus","secondary":false,"description":"Liikenteenohjausautomatiikasta tai liikenneohjaajan virheestä aiheutuneet myöhästymiset."},{"code":"L8","name":"Liikenteelliset päätökset","responsibility":"liikenteenohjaus","secondary":false,"description":"Tätä syykoodia käytetään liikenteenohjauksen tekemästä välttämättömästä, liikennetilanteesta johtuvasta päätöksestä (esim. päätös junan pysähdyspaikan muutoksesta) aiheutuvan myöhästymisen yhteydessä."},{"code":"P1","name":"Ratainfran laiteviat","responsibility":"radanpitäjä / liikennöitsijä","secondary":false,"description":"Kaikki radanpitäjän vastuulla olevien laitteiden vioista johtuvat myöhästymiset (paitsi valvontalaiteviat) sekä muiden tahojen (liikennöitsijä) vastuulla olevien laitteiden vioista johtuvat myöhästymiset."},{"code":"P2","name":"Tietojärjestelmäviat","responsibility":"liikenteenohjaus / liikennöitsijä / ulkopuolinen","secondary":false,"description":"Tietojärjestelmien vioista aiheutuneet myöhästymiset. Tietojärjestelmä voi olla joko liikenteenohjauksen, liikennöitsijän tai muun tahon vastuulla. Lisäksi lähtötietojen (kokoonpano tai aikataulu) puuttumisesta (P201) sekä teknisestä viasta lähtövalmiusilmoituksen tekemisessä (P202) johtuvat myöhästymiset. Ensikirjauksen yhteydessä lähtötietojen puuttumisen osalta ei tarvitse ottaa kantaa siihen, missä järjestelmässä vika on, koska se selviää yleensä vasta myöhemmin."},{"code":"P3","name":"Liikkuvan kaluston valvontalaitevika tai -häiriö","responsibility":"radanpitäjä","secondary":false,"description":"Liikkuvan kaluston valvontalaitevikojen / aiheettomien hälytysten aiheuttamat myöhästymiset."},{"code":"P4","name":"Viestintälaite /-yhteys viat","responsibility":"liikenteenohjaus / radanpitäjä / liikennöitsijä","secondary":false,"description":"Viestintälaitteiden ja yhteyksien vioista johtuvat myöhästymiset."},{"code":"S1","name":"Sähkönjakeluhäiriö","responsibility":"radanpitäjä / ulkopuolinen","secondary":false,"description":"Sähkönjakeluhäiriöistä aiheutuvat myöhästymiset, jotka eivät aiheudu sähkörataviasta. Näitä ovat esimerkiksi laukaisu, yleisen sähköverkon vika tai tehon rajoite."},{"code":"S2","name":"Sähköratavika","responsibility":"radanpitäjä","secondary":false,"description":"Sähkörataan liittyvistä vioista aiheutuneet myöhästymiset."},{"code":"T1","name":"Pitkäaikaiset nopeusrajoitukset","responsibility":"radanpitäjä","secondary":false,"description":"Pitkäaikaisten nopeusrajoitusten aiheuttamat myöhästymiset, jotka eivät liity suoraan ratatyöhön (esimerkiksi roudasta tai muusta radan huonosta kunnosta johtuvat rajoitukset)."},{"code":"T2","name":"Liikenteenohjauksen asettamat nopeus-rajoitukset (ratarakenne)","responsibility":"radanpitäjä","secondary":false,"description":"Myöhästymiset, jotka johtuvat liikenteenohjauksen asettamista lyhytaikaisista nopeusrajoituksista, joihin ei liity POHA-tapahtumaa. Jos myöhemmin todetaan esimerkiksi vika radassa, myöhästymisten syynä siirrytään käyttämään kyseisestä viasta tehtyä POHA-tapahtumaa tai asetettua pitkäaikaista nopeusrajoitusta. Aiempia häiriökirjauksia ei muuteta järjestelmään. Tällä syykoodilla ei ole 2-tason syykoodeja."},{"code":"T3","name":"Ratarikko / este radalla","responsibility":"radanpitäjä","secondary":false,"description":"Myöhästymiset, jotka johtuvat liikennöinnin estävästä ratarikosta tai liikennöinnin estävästä tai sitä hidastavasta luonnonilmiön aiheuttamasta esteestä radalla."},{"code":"R1","name":"Ratatyöt (ennakoidut työt nopeus-rajoituksineen)","responsibility":"radanpitäjä","secondary":false,"description":"Kirjataan ennakkoon sovituista ratatöistä ja niiden nopeusrajoituksista aiheutuvat myöhästymiset. Tällä syykoodilla ei ole 2-tason syykoodeja."},{"code":"R2","name":"Ratatyön sovitun ajan ylitys","responsibility":"radanpitäjä","secondary":false,"description":"Ratatyön sovitun ajan ylityksestä aiheutuneet myöhästymiset."},{"code":"R3","name":"Liikennerajoite ratatyön jälkeen","responsibility":"radanpitäjä","secondary":false,"description":"Myöhästymiset, jotka aiheutuvat suunnitellun ratatyön jälkeen voimaan jääneestä muusta suunnittelemattomasta liikennerajoitteesta kuin nopeusrajoituksesta (esim. liikennejärjestelyjä on jatkettu, jonka vuoksi raide tai vaihde on pois käytöstä)."},{"code":"R4","name":"Ratatyön toteutus poikkeaa suunnitellusta","responsibility":"radanpitäjä","secondary":false,"description":"Myöhästymiset, kun ratatyön toteutus poikkeaa suunnitellusta muutoin kuin ajallisesti ja vaikuttaa liikenteeseen (esimerkiksi ratatyön aikainen nopeusrajoitus poikkeaa suunnitellusta tai ratatyöaluetta joudutaan laajentamaan)."},{"code":"O1","name":"Allejäänti (ihminen)","responsibility":"ulkopuolinen","secondary":false,"description":"Henkilöiden allejääntitapauksista aiheutuneet myöhästymiset."},{"code":"O2","name":"Allejäänti (eläin)","responsibility":"ulkopuolinen","secondary":false,"description":"Eläinten allejääntitapauksista aiheutuneet myöhästymiset."},{"code":"O3","name":"Tasoristeysonnet-tomuus","responsibility":"ulkopuolinen","secondary":false,"description":"Tasoristeysonnettomuuksista aiheutuneet myöhästymiset."},{"code":"O4","name":"Muut onnettomuudet ja vauriot","responsibility":"ulkopuolinen","secondary":false,"description":"Myöhästymiset, jotka johtuvat muista onnettomuuksista ja vaurioista kuin allejäänneistä tai tasoristeysonnettomuuksista."},{"code":"M1","name":"Matkustajajunan pysähtymisajan ylitys","responsibility":"ulkopuolinen","secondary":false,"description":"Myöhästymiset, jotka johtuvat yksittäisen matkustajajunan pysähdyksen pitkittymisestä matkustajiin tai matkustajapalveluun liittyvistä syistä. Junahenkilökunta ilmoittaa pysähtymisajan ylityksen syyn liikenneohjaajalle. Jos asemalla tapahtuu selkeä pysähtymisajan ylitys (lähiliikenne 3 min., kaukoliikenne 4 min.), ja junahenkilökunta ei ilmoita syytä pysähtymisajan ylitykselle tai liikenneohjaaja ei muuta kautta tiedä syytä myöhästymiselle, liikenneohjaaja on yhteydessä junahenkilökuntaan syyn selvittämiseksi. Syykoodi M1 voidaan jättää tarkentamatta 2-tasolle, jos liikenneohjaajan ensisijaiset tehtävät estävät pysähtymisajan ylityksen syyn varmistamisen junahenkilökunnalta tai syy ei yhteydenotosta huolimatta selviä. Tilanteissa, joissa seurantavälillä pysähtymisaika ylittyy useammalla asemalla (lähiliikenne), käytetään tätä koodia vain, jos junahenkilökunta/liikennöitsijä ilmoittaa kyseessä olleen matkustajista johtuvat syyt (esim. matkustajaruuhka)."},{"code":"M2","name":"Ylimääräinen pysähdys","responsibility":"ulkopuolinen","secondary":false,"description":"Matkustajajunan aikataulusta poikkeavasta pysähdyksestä aiheutuneet myöhästymiset (esimerkiksi perutun tai paljon myöhässä olevan junan pysähdyksen korvaaminen tai sairaskohtauksen saaneen matkustajan siirtäminen ambulanssiin muualla kuin suunnitellulla pysähdyspaikalla). Tällä syykoodilla ei ole 2-tason syykoodeja."},{"code":"I1","name":"Poikkeukselliset sääolosuhteet","responsibility":"ulkopuolinen","secondary":false,"description":"Myöhästymiset poikkeuksellisissa sääolosuhteissa, jos niihin ei liity selkeää teknistä vikaa kalustossa tai infrassa. Ensisijaisesti säätä ei käytetä myöhästymissyynä."},{"code":"I2","name":"Lehtikeli tai muu liukkaus","responsibility":"ulkopuolinen","secondary":false,"description":"Lehtikelistä tai muusta liukkaudesta aiheutuneet myöhästymiset."},{"code":"I3","name":"Ilkivalta, asiaton radalla liikkuminen","responsibility":"ulkopuolinen","secondary":false,"description":"Ilkivallasta, asiattomasta radalla liikkujasta tai eläimestä radalla aiheutuneet myöhästymiset."},{"code":"I4","name":"Muu syy","responsibility":"ulkopuolinen","secondary":false,"description":"Myöhästymiset, joille ei löydy soveltuvaa syykoodia syykoodistosta (esimerkiksi opastimien peittyminen lumeen tai junan läpivalaisun aiheuttama myöhästyminen). Mikäli liikenteenohjaus ei tiedä syytä myöhästymiselle, tulee syytä kysyä liikennöitsijältä (operaatiokeskus / junan kuljettaja). Jos junan kuljettajakaan ei pysty tunnistamaan syytä myöhästymiselle, voidaan käyttää I4-syykoodia."}]
+﻿[
+    {
+        "code": "H1",
+        "name": "Liikennöitsijän henkilökunta puuttuu",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat liikennöitsijän henkilökunnan puuttumisesta. Myös junan lähtövalmisteluihin liittyvän liikennöitsijän henkilökunnan (esim. vaihtotyönjohtaja tai jarrujenkoettelija) puuttumisesta aiheutuvat myöhästymiset."
+    },
+    {
+        "code": "H2",
+        "name": "Lähtövalmius- tai lähtöpoikkeama-ilmoitus tekemättä",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat siitä, että junahenkilökunta ei tee lähtövalmius- tai lähtöpoikkeamailmoitusta ajallaan. Lähtövalmius- tai lähtöpoikkeamailmoituksen puuttuessa liikenneohjaaja on yhteydessä junahenkilökuntaan. Jos kyse on inhimillisestä erehdyksestä, käytetään tätä syykoodia."
+    },
+    {
+        "code": "H3",
+        "name": "Muu henkilökuntasyy",
+        "responsibility": "liikennöitsijä / ulkopuolinen",
+        "secondary": false,
+        "description": "Muista henkilökuntaan liittyvistä syistä johtuvat myöhästymiset. Liikenneohjaaja tarkentaa tämän syyn 2-tasolle LOKIssa seuraavassa kuvatulla tavalla. Liikenneohjaajan on annettava selite tapauksesta käyttäessään tätä syykoodia."
+    },
+    {
+        "code": "J1",
+        "name": "Junan muodostamisen viivästyminen (kaikki liikenne)",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat siitä, ettei lähdössä olevaa junaa saada muodostettua ajoissa. Myös myöhästymiset, jotka aiheutuvat vaunujen oton/jätön taikka veturin kytkennän tai irrotuksen viivästymisestä tai kuormauksesta/purusta väliasemalla."
+    },
+    {
+        "code": "K1",
+        "name": "Kalustopula",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat kalustopulasta. "
+    },
+    {
+        "code": "K2",
+        "name": "Kalustovika",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat kaluston tai moottorijunien vikaantumisesta lähtöraiteella tai matkan aikana. Jos veturivetoisen junan osalta ei tiedetä, onko vika kalustossa vai veturissa, käytetään syykoodia K2."
+    },
+    {
+        "code": "K3",
+        "name": "Kalustosta johtuva nopeuden alennus",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat siitä, että junalla on muusta syystä kuin veturista johtuva nopeuden alennus."
+    },
+    {
+        "code": "K4",
+        "name": "Kytkentä",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Matkustajajunien myöhästymiset, jotka johtuvat junan lähtöasemalla tai matkan aikana ilmenneistä ongelmista suunnitellussa uusien vaunujen kytkemisessä junaan tai kahden junarungon yhdistämisessä."
+    },
+    {
+        "code": "K5",
+        "name": "Irroitus",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Matkustajajunien myöhästymiset, jotka johtuvat junan lähtöasemalla tai matkan aikana ilmenneistä ongelmista suunnitellussa vaunujen irrottamisessa junasta tai kahden junarungon irrottamisessa toisistaan."
+    },
+    {
+        "code": "K6",
+        "name": "Katsastamaton kalusto",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka aiheutuvat katsastamattoman kaluston vaihtamisesta / poistamisesta junasta."
+    },
+    {
+        "code": "V1",
+        "name": "Veturipula",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat veturipulasta."
+    },
+    {
+        "code": "V2",
+        "name": "Veturivika",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Lähtöraiteella tai matkan aikana tapahtuneesta veturin vikaantumisesta aiheutuneet myöhästymiset. Jos veturivetoisen junan osalta ei tiedetä, onko vika kalustossa vai veturissa, käytetään syykoodia K2 (kalustovika). Junan kuljettaja ilmoittaa liikenneohjaajalle matkan aikana tapahtuvista kalusto- tai vetokalustovioista. Ilmoituksen yhteydessä kuljettajan tulee kertoa, onko vika veturissa vai muussa kalustossa, mikäli se on tiedossa."
+    },
+    {
+        "code": "V3",
+        "name": "Vetovoimasta johtuva nopeuden alennus / tehon puute",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka aiheutuvat siitä, että junalla on veturista johtuva nopeuden alennus. Myös myöhästymiset, jotka johtuvat suunniteltua pienemmästä vetokaluston tehosta. Tehon puutteen syynä voi olla tekninen vika tai vetokaluston vaihto."
+    },
+    {
+        "code": "V4",
+        "name": "Katsastamaton vetokalusto",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat katsastamattoman veturin vaihtamisesta / poistamisesta junasta."
+    },
+    {
+        "code": "A1",
+        "name": "Mäkeenjäänti tai nopeuden poikkeuksellinen aleneminen mäessä",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Mäkeenjäänneistä aiheutuneet myöhästymiset. Syykoodia voidaan käyttää myös tilanteessa, jossa junan kulku hidastuu merkittävästi johtuen jyrkästä mäestä ja sen olosuhteista."
+    },
+    {
+        "code": "A2",
+        "name": "Aikataulu-suunnittelun virhe",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Tätä koodia voi käyttää perustellusta syystä tilanteissa, joissa junan myöhästyminen joko kumuloituu useamman asemavälin matkalla tai toistuu useampana päivänä samalla seuranta-asemalla tai -välillä."
+    },
+    {
+        "code": "A3",
+        "name": "Junaa ei ole ajettu",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Kirjautuu junille, jotka kuitataan LOKIssa ”Ei ajettu” -toiminnallisuudella. Sitä voidaan käyttää tilanteissa, joissa juna tiedetään perutuksi, mutta liikennöitsijä ei ole ajoissa tehnyt junan perumista kapasiteetinhallintajärjestelmään. Tällä toiminnallisuudella liikenneohjaaja saa kuitattua LOKIn vaatimat tapahtumat pois listalta, mutta kirjaus ei tee junasta peruttua. Liikenteenohjaus välittää liikennöitsijälle tiedon perumatta jääneestä junasta. Lisäksi tätä toiminnallisuutta käytetään tavarajunille osiin jaetuilla liikennepaikoilla, jos ne lähtevät tai saapuvat aikataulusta poikkeavalle liikennepaikalle."
+    },
+    {
+        "code": "E1",
+        "name": "Etuajassa lähtö",
+        "responsibility": "liikennöitsijä / liikenteenohjaus",
+        "secondary": false,
+        "description": "Kirjataan etuajassakulku, kun liikenneohjaaja antaa junalle luvan lähteä etuajassa alkuasemaltaan. Liikenneohjaaja varmistaa syyn etuajassa lähdölle veturinkuljettajalta (tai opk:sta), kun lupaa etuajassa lähdölle pyydetään."
+    },
+    {
+        "code": "E2",
+        "name": "Ajo- tai pysähtymisajan alitus",
+        "responsibility": "liikennöitsijä",
+        "secondary": false,
+        "description": "Kirjataan etuajassakulku, kun se tapahtuu junan matkan aikana. "
+    },
+    {
+        "code": "L1",
+        "name": "Yhteysliikenteen odotus (jatkoyhteydet)",
+        "responsibility": "liikennöitsijä",
+        "secondary": true,
+        "description": "Kirjataan yhteysliikenteen (henkilöliikenne) odotuksesta aiheutuneet myöhästymiset."
+    },
+    {
+        "code": "L2",
+        "name": "Junakohtaus, edellä kulkeva juna tai ohitus",
+        "responsibility": "liikenteenohjaus",
+        "secondary": true,
+        "description": "Kirjataan junakohtauksesta, edellä kulkevasta junasta tai ohituksesta aiheutuneet myöhästymiset. Tavallisesti kyse on siitä, että liikenteen myöhästymisen takia junakohtaus ei toteudu suunnitellusti tai nopeampi juna saavuttaa hitaamman junan. Kyse voi olla myös siitä, että normaalissa liikennetilanteessa suunniteltu junakohtaus tai ohitus kestää suunniteltua pidempään."
+    },
+    {
+        "code": "L3",
+        "name": "Konflikti kapasiteetissa",
+        "responsibility": "liikenteenohjaus / liikennöitsijä",
+        "secondary": true,
+        "description": "Myöhästymiset, jotka johtuvat konfliktista kapasiteetissa. Esimerkiksi liikenteen ruuhkautumisen takia asemalla ei ole vapaata/sopivaa tuloraidetta tai ratapiha on täynnä."
+    },
+    {
+        "code": "L4",
+        "name": "Myöhästyminen ulkomailta",
+        "responsibility": "ulkopuolinen",
+        "secondary": false,
+        "description": "Ulkomailta myöhässä saapuvasta junasta aiheutuvat myöhästymiset. Tällä syykoodilla ei ole 2-tason syykoodeja."
+    },
+    {
+        "code": "L5",
+        "name": "Edessä oleva kalusto tukkii radan",
+        "responsibility": "liikennöitsijä / ulkopuolinen",
+        "secondary": true,
+        "description": "Vain järjestelmien käytössä. Järjestelmät kirjaavat tämän syykoodin (1- sekä 2-tason) automaattisesti niille junille, jotka linkitetään toisen junan tai muun kaluston rikkoontumisesta, mäkeenjäännistä tai onnettomuudesta tehdylle POHA-tapahtumalle."
+    },
+    {
+        "code": "L6",
+        "name": "Junan lähtöön liittyvä odotus",
+        "responsibility": "liikennöitsijä / radanpitäjä / liikenteenohjaus / ulkopuolinen",
+        "secondary": true,
+        "description": "Myöhästymiset, jotka johtuvat junan lähtöön liittyvästä odottamisesta, esimerkiksi lähtevän junan saaton myöhästymisestä tai koko junarungon odottamisesta seuraavaa junaa varten. Tämä koskee myös junarunkojen kääntöjä ja kaukoliikenteenjunien yhdistämistä väliasemalla."
+    },
+    {
+        "code": "L7",
+        "name": "Liikenteenhoitovirhe",
+        "responsibility": "liikenteenohjaus",
+        "secondary": false,
+        "description": "Liikenteenohjausautomatiikasta tai liikenneohjaajan virheestä aiheutuneet myöhästymiset."
+    },
+    {
+        "code": "L8",
+        "name": "Liikenteelliset päätökset",
+        "responsibility": "liikenteenohjaus",
+        "secondary": false,
+        "description": "Tätä syykoodia käytetään liikenteenohjauksen tekemästä välttämättömästä, liikennetilanteesta johtuvasta päätöksestä (esim. päätös junan pysähdyspaikan muutoksesta) aiheutuvan myöhästymisen yhteydessä."
+    },
+    {
+        "code": "P1",
+        "name": "Ratainfran laiteviat",
+        "responsibility": "radanpitäjä / liikennöitsijä",
+        "secondary": false,
+        "description": "Kaikki radanpitäjän vastuulla olevien laitteiden vioista johtuvat myöhästymiset (paitsi valvontalaiteviat) sekä muiden tahojen (liikennöitsijä) vastuulla olevien laitteiden vioista johtuvat myöhästymiset."
+    },
+    {
+        "code": "P2",
+        "name": "Tietojärjestelmäviat",
+        "responsibility": "liikenteenohjaus / liikennöitsijä / ulkopuolinen",
+        "secondary": false,
+        "description": "Tietojärjestelmien vioista aiheutuneet myöhästymiset. Tietojärjestelmä voi olla joko liikenteenohjauksen, liikennöitsijän tai muun tahon vastuulla. Lisäksi lähtötietojen (kokoonpano tai aikataulu) puuttumisesta (P201) sekä teknisestä viasta lähtövalmiusilmoituksen tekemisessä (P202) johtuvat myöhästymiset. Ensikirjauksen yhteydessä lähtötietojen puuttumisen osalta ei tarvitse ottaa kantaa siihen, missä järjestelmässä vika on, koska se selviää yleensä vasta myöhemmin."
+    },
+    {
+        "code": "P3",
+        "name": "Liikkuvan kaluston valvontalaitevika tai -häiriö",
+        "responsibility": "radanpitäjä",
+        "secondary": false,
+        "description": "Liikkuvan kaluston valvontalaitevikojen / aiheettomien hälytysten aiheuttamat myöhästymiset."
+    },
+    {
+        "code": "P4",
+        "name": "Viestintälaite /-yhteys viat",
+        "responsibility": "liikenteenohjaus / radanpitäjä / liikennöitsijä",
+        "secondary": false,
+        "description": "Viestintälaitteiden ja yhteyksien vioista johtuvat myöhästymiset."
+    },
+    {
+        "code": "S1",
+        "name": "Sähkönjakeluhäiriö",
+        "responsibility": "radanpitäjä / ulkopuolinen",
+        "secondary": false,
+        "description": "Sähkönjakeluhäiriöistä aiheutuvat myöhästymiset, jotka eivät aiheudu sähkörataviasta. Näitä ovat esimerkiksi laukaisu, yleisen sähköverkon vika tai tehon rajoite."
+    },
+    {
+        "code": "S2",
+        "name": "Sähköratavika",
+        "responsibility": "radanpitäjä",
+        "secondary": false,
+        "description": "Sähkörataan liittyvistä vioista aiheutuneet myöhästymiset."
+    },
+    {
+        "code": "T1",
+        "name": "Pitkäaikaiset nopeusrajoitukset",
+        "responsibility": "radanpitäjä",
+        "secondary": false,
+        "description": "Pitkäaikaisten nopeusrajoitusten aiheuttamat myöhästymiset, jotka eivät liity suoraan ratatyöhön (esimerkiksi roudasta tai muusta radan huonosta kunnosta johtuvat rajoitukset)."
+    },
+    {
+        "code": "T2",
+        "name": "Liikenteenohjauksen asettamat nopeus-rajoitukset (ratarakenne)",
+        "responsibility": "radanpitäjä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat liikenteenohjauksen asettamista lyhytaikaisista nopeusrajoituksista, joihin ei liity POHA-tapahtumaa. Jos myöhemmin todetaan esimerkiksi vika radassa, myöhästymisten syynä siirrytään käyttämään kyseisestä viasta tehtyä POHA-tapahtumaa tai asetettua pitkäaikaista nopeusrajoitusta. Aiempia häiriökirjauksia ei muuteta järjestelmään. Tällä syykoodilla ei ole 2-tason syykoodeja."
+    },
+    {
+        "code": "T3",
+        "name": "Ratarikko / este radalla",
+        "responsibility": "radanpitäjä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat liikennöinnin estävästä ratarikosta tai liikennöinnin estävästä tai sitä hidastavasta luonnonilmiön aiheuttamasta esteestä radalla."
+    },
+    {
+        "code": "R1",
+        "name": "Ratatyöt (ennakoidut työt nopeus-rajoituksineen)",
+        "responsibility": "radanpitäjä",
+        "secondary": false,
+        "description": "Kirjataan ennakkoon sovituista ratatöistä ja niiden nopeusrajoituksista aiheutuvat myöhästymiset. Tällä syykoodilla ei ole 2-tason syykoodeja."
+    },
+    {
+        "code": "R2",
+        "name": "Ratatyön sovitun ajan ylitys",
+        "responsibility": "radanpitäjä",
+        "secondary": false,
+        "description": "Ratatyön sovitun ajan ylityksestä aiheutuneet myöhästymiset."
+    },
+    {
+        "code": "R3",
+        "name": "Liikennerajoite ratatyön jälkeen",
+        "responsibility": "radanpitäjä",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka aiheutuvat suunnitellun ratatyön jälkeen voimaan jääneestä muusta suunnittelemattomasta liikennerajoitteesta kuin nopeusrajoituksesta (esim. liikennejärjestelyjä on jatkettu, jonka vuoksi raide tai vaihde on pois käytöstä)."
+    },
+    {
+        "code": "R4",
+        "name": "Ratatyön toteutus poikkeaa suunnitellusta",
+        "responsibility": "radanpitäjä",
+        "secondary": false,
+        "description": "Myöhästymiset, kun ratatyön toteutus poikkeaa suunnitellusta muutoin kuin ajallisesti ja vaikuttaa liikenteeseen (esimerkiksi ratatyön aikainen nopeusrajoitus poikkeaa suunnitellusta tai ratatyöaluetta joudutaan laajentamaan)."
+    },
+    {
+        "code": "O1",
+        "name": "Allejäänti (ihminen)",
+        "responsibility": "ulkopuolinen",
+        "secondary": false,
+        "description": "Henkilöiden allejääntitapauksista aiheutuneet myöhästymiset."
+    },
+    {
+        "code": "O2",
+        "name": "Allejäänti (eläin)",
+        "responsibility": "ulkopuolinen",
+        "secondary": false,
+        "description": "Eläinten allejääntitapauksista aiheutuneet myöhästymiset."
+    },
+    {
+        "code": "O3",
+        "name": "Tasoristeysonnet-tomuus",
+        "responsibility": "ulkopuolinen",
+        "secondary": false,
+        "description": "Tasoristeysonnettomuuksista aiheutuneet myöhästymiset."
+    },
+    {
+        "code": "O4",
+        "name": "Muut onnettomuudet ja vauriot",
+        "responsibility": "ulkopuolinen",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat muista onnettomuuksista ja vaurioista kuin allejäänneistä tai tasoristeysonnettomuuksista."
+    },
+    {
+        "code": "M1",
+        "name": "Matkustajajunan pysähtymisajan ylitys",
+        "responsibility": "ulkopuolinen",
+        "secondary": false,
+        "description": "Myöhästymiset, jotka johtuvat yksittäisen matkustajajunan pysähdyksen pitkittymisestä matkustajiin tai matkustajapalveluun liittyvistä syistä. Junahenkilökunta ilmoittaa pysähtymisajan ylityksen syyn liikenneohjaajalle. Jos asemalla tapahtuu selkeä pysähtymisajan ylitys (lähiliikenne 3 min., kaukoliikenne 4 min.), ja junahenkilökunta ei ilmoita syytä pysähtymisajan ylitykselle tai liikenneohjaaja ei muuta kautta tiedä syytä myöhästymiselle, liikenneohjaaja on yhteydessä junahenkilökuntaan syyn selvittämiseksi. Syykoodi M1 voidaan jättää tarkentamatta 2-tasolle, jos liikenneohjaajan ensisijaiset tehtävät estävät pysähtymisajan ylityksen syyn varmistamisen junahenkilökunnalta tai syy ei yhteydenotosta huolimatta selviä. Tilanteissa, joissa seurantavälillä pysähtymisaika ylittyy useammalla asemalla (lähiliikenne), käytetään tätä koodia vain, jos junahenkilökunta/liikennöitsijä ilmoittaa kyseessä olleen matkustajista johtuvat syyt (esim. matkustajaruuhka)."
+    },
+    {
+        "code": "M2",
+        "name": "Ylimääräinen pysähdys",
+        "responsibility": "ulkopuolinen",
+        "secondary": false,
+        "description": "Matkustajajunan aikataulusta poikkeavasta pysähdyksestä aiheutuneet myöhästymiset (esimerkiksi perutun tai paljon myöhässä olevan junan pysähdyksen korvaaminen tai sairaskohtauksen saaneen matkustajan siirtäminen ambulanssiin muualla kuin suunnitellulla pysähdyspaikalla). Tällä syykoodilla ei ole 2-tason syykoodeja."
+    },
+    {
+        "code": "I1",
+        "name": "Poikkeukselliset sääolosuhteet",
+        "responsibility": "ulkopuolinen",
+        "secondary": false,
+        "description": "Myöhästymiset poikkeuksellisissa sääolosuhteissa, jos niihin ei liity selkeää teknistä vikaa kalustossa tai infrassa. Ensisijaisesti säätä ei käytetä myöhästymissyynä."
+    },
+    {
+        "code": "I2",
+        "name": "Lehtikeli tai muu liukkaus",
+        "responsibility": "ulkopuolinen",
+        "secondary": false,
+        "description": "Lehtikelistä tai muusta liukkaudesta aiheutuneet myöhästymiset."
+    },
+    {
+        "code": "I3",
+        "name": "Ilkivalta, asiaton radalla liikkuminen",
+        "responsibility": "ulkopuolinen",
+        "secondary": false,
+        "description": "Ilkivallasta, asiattomasta radalla liikkujasta tai eläimestä radalla aiheutuneet myöhästymiset."
+    },
+    {
+        "code": "I4",
+        "name": "Muu syy",
+        "responsibility": "ulkopuolinen",
+        "secondary": false,
+        "description": "Myöhästymiset, joille ei löydy soveltuvaa syykoodia syykoodistosta (esimerkiksi opastimien peittyminen lumeen tai junan läpivalaisun aiheuttama myöhästyminen). Mikäli liikenteenohjaus ei tiedä syytä myöhästymiselle, tulee syytä kysyä liikennöitsijältä (operaatiokeskus / junan kuljettaja). Jos junan kuljettajakaan ei pysty tunnistamaan syytä myöhästymiselle, voidaan käyttää I4-syykoodia."
+    }
+]
