@@ -2,7 +2,7 @@
     "name": "kenenonvastuu",
     "version": "2.0.0",
     "license": "AGPL-3.0-only",
-    "author": "Milo Sorri",
+    "author": "Milo Sorri <~@milosorri.fi>",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/msorri/kenenonvastuu.git"
