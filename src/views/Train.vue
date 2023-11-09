@@ -277,7 +277,7 @@ export default {
             this.train = null;
 
             try {
-                if (this.stations || this.operators === null) this.fetchMetadata();
+                if (this.stations || this.operators === null) await this.fetchMetadata();
 
                 let res = await fetch(
                     `https://rata.digitraffic.fi/api/v1/trains/${this.date}/${this.trainNumber}`
