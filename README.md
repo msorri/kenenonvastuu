@@ -2,8 +2,11 @@
 
 Simple tool for displaying Finnish train timetables and delay causes, and attributing the delay to the specific stakeholder responsible for it. Built with Vue.js. [Available here.](https://msorri.github.io/kenenonvastuu)
 
-Delay responsibilities are gathered from the table at the end of the [official manual](https://julkaisut.vayla.fi/pdf11/ohje_2019_rautatieliikenteen_hairiokirjausten_web.pdf), fed into Excel with Acrobat, and then formatted to machine-readable form (with macros! no json export in 2021!). No mechanism for updates exist because they seem to happen very irregularly.
+Delay responsibilities are gathered from the table at the end of the [official manual](https://ava.vaylapilvi.fi/ava/Julkaisut/Vaylavirasto/vo_2023-15_hairiokirjausten_kasikirja_web.pdf), fed into Excel with Acrobat, and then formatted to JSON (with macros!). No mechanism for updates exist because they seem to happen very irregularly (last manual was valid for four years).
 
-Operator information and delay descriptions are fetched from the Digitraffic API, so they are always up-to-date.
-
-This is known to break on some older trains. Might be the delay ID's changing? ¯\\\_(ツ)\_/¯
+## Version history
+| Version             | Release date | Release notes                                                                                       |
+| ------------------- | ------------ | --------------------------------------------------------------------------------------------------- |
+| 2.0.0 _current_     | 9.11.2023    | Update category codes to the updated manual released on 15.3.2023, add descriptions, update styling |
+| Unversioned ¯\\\_(ツ)\_/¯ | 26.8.2022    | Fix category code id changes, other miscellanous fixes                                                    |
+| 1.0.0               | 19.1.2021    | Initial stable release                                                                              |
