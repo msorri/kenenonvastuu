@@ -22,7 +22,7 @@ export default {
     },
     methods: {
         goToTrain() {
-            console.log({ trainNumber: this.trainNumber, date: this.date });
+            // console.log({ trainNumber: this.trainNumber, date: this.date });
             this.$router.push({
                 name: 'Train',
                 params: { trainNumber: this.trainNumber, date: this.date },
