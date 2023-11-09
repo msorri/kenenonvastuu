@@ -23,9 +23,9 @@
 </template>
 
 <script>
-import causeCategories from '@/assets/data/cause-category-codes-exp.json';
-import detailedCauses from '@/assets/data/detailed-cause-category-codes-exp.json';
-import thirdCauses from '@/assets/data/third-cause-category-codes-exp.json';
+import causeCategories from '@/assets/data/category-exp.json';
+import detailedCauses from '@/assets/data/detailedCategory-exp.json';
+import thirdCauses from '@/assets/data/thirdCategory-exp.json';
 
 export default {
     name: 'Causes',
