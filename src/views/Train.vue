@@ -66,7 +66,7 @@
                                     <span>{{
                                         new Date(row.arrival.scheduledTime)
                                             .toTimeString()
-                                            .substr(0, 8)
+                                            .substring(0, 8)
                                     }}</span>
 
                                     <!-- Realized time -->
@@ -75,7 +75,7 @@
                                         {{
                                             new Date(row.arrival.actualTime)
                                                 .toTimeString()
-                                                .substr(0, 8)
+                                                .substring(0, 8)
                                         }}</span
                                     >
 
@@ -85,7 +85,7 @@
                                         {{
                                             new Date(row.arrival.liveEstimateTime)
                                                 .toTimeString()
-                                                .substr(0, 8)
+                                                .substring(0, 8)
                                         }}</span
                                     >
                                 </span>
@@ -132,7 +132,7 @@
                                 <span>{{
                                     new Date(row.departure.scheduledTime)
                                         .toTimeString()
-                                        .substr(0, 8)
+                                        .substring(0, 8)
                                 }}</span>
 
                                 <!-- Realized time -->
@@ -141,7 +141,7 @@
                                     {{
                                         new Date(row.departure.actualTime)
                                             .toTimeString()
-                                            .substr(0, 8)
+                                            .substring(0, 8)
                                     }}</span
                                 >
 
@@ -151,7 +151,7 @@
                                     {{
                                         new Date(row.departure.liveEstimateTime)
                                             .toTimeString()
-                                            .substr(0, 8)
+                                            .substring(0, 8)
                                     }}</span
                                 >
                             </span>
