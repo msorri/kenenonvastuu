@@ -2,11 +2,11 @@
     <form id="form" @submit.prevent="goToTrain">
         <input
             v-model="trainNumber"
-            type="number"
-            class="border border-gray-700 border-b-0 p-1 w-48 h-8 block"
+            type="number" inputmode="decimal"
+            class="border border-gray-700 border-b-0 p-1 w-48 h-8 rounded-b-none rounded-t-lg block"
             placeholder="Junanumero" required
         />
-        <input v-model="date" type="date" class="border border-gray-700 p-1 mb-4 w-48 h-8 block" />
+        <input v-model="date" type="date" class="border border-gray-700 p-1 mb-4 w-48 h-8 rounded-t-none rounded-b-lg block" />
         <input type="submit" class="p-2 w-16 rounded-full leading-none bg-blue-500 text-white cursor-pointer focus:outline-none" value="Hae" />
     </form>
 </template>
